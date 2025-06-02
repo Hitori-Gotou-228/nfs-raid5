@@ -30,6 +30,7 @@ chmod -R 777 /mnt/nfs
 в файл nano /etc/fstab пишем
 192.168.100.2:/raid5/nfs /mnt/nfs nfs defaults 0 0
 mount -a
+mount 192.168.100.2:/raid5/nfs /mnt/nfs
 systemctl restart nfs-utils
 dh -h 
 В конце вывода должен быть виден смонтированный ресурс
